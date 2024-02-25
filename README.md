@@ -6,7 +6,7 @@ Este es un proyecto en Python que te ayuda a organizar los archivos en tu carpet
 
 1. Clona este repositorio en tu máquina local:
 
-`git clone https://github.com/valentinbellini/downloads-cleaner.git`
+   `git clone https://github.com/valentinbellini/downloads-cleaner.git`
 
 2. Asegúrate de tener Python instalado en tu sistema. Puedes descargarlo desde [python.org](https://www.python.org/downloads/).
 
