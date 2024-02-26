@@ -1,6 +1,6 @@
 # Limpiador de Carpetas de Descargas
 
-Este es un proyecto en Python que te ayuda a organizar los archivos en tu carpeta de descargas según su tipo de archivo. Mueve los archivos a subcarpetas correspondientes basadas en sus extensiones de archivo.
+Este es un proyecto en Python que te ayuda a organizar los archivos en tu carpeta de descargas según su tipo de archivo. Mueve los archivos a subcarpetas correspondientes basadas en sus extensiones de archivo. Personalmente lo utilizo para acomodar esta carpeta una vez por semana con el programador de tareas.
 
 ## Uso
 
