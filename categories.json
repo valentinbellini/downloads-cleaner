@@ -1,0 +1,11 @@
+{
+    "Images": [".jpg", ".jpeg", ".png", ".gif", ".svg"],
+    "Documents": [".pdf", ".docx", ".txt", ".epub", ".xlsx", ".pptx", ".csv"],
+    "Videos": [".mp4", ".mov", ".avi"],
+    "Music": [".mp3", ".wav"],
+    "Compressed": [".zip", ".rar", ".tar", ".gz"],
+    "Executables": [".exe", ".msi"],
+    "Matlab": [".m", ".slx"],
+    "Python": [".py", ".ipynb"],
+    "Others": []
+}
