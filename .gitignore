@@ -3,8 +3,9 @@
 file_organizer.log
 
 # Entornos virtuales
-venv/
+env/
 .env/
+
 
 # Archivos de configuración locales
 *.env
