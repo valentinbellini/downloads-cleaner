@@ -73,6 +73,10 @@ def decrypt_file(encrypted_file_path):
 
 
 print("Ruta actual:", os.getcwd())
-archivo = "C:/Users/valen/Downloads/TEMPORAL.encrypted"
-#encrypt_file(archivo)
-#decrypt_file(archivo)
+
+archivo = "C:/Users/valen/Downloads/TEMPORAL.pdf"
+archivo_encrypted = "C:/Users/valen/Downloads/TEMPORAL.encrypted"
+
+encrypt_file(archivo)
+decrypt_file(archivo_encrypted)
+
