@@ -17,3 +17,7 @@ __pycache__/
 # Configuración de IDEs
 .vscode/
 .idea/
+
+.key
+.encrypted
+.decrypted
