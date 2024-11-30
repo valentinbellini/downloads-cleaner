@@ -37,7 +37,7 @@ def clean_temp_directories(temp_dirs):
                         os.remove(file_path)
                         logging.info(f"Removiendo archivo: {file_path}")
                     except Exception as e:
-                        logging.error(f"Error al elimina: {file_path}: {e}")
+                        logging.error(f"Error al eliminar: {file_path}: {e}")
             logging.info(f"Limpiada la carpeta {temp_dir}")
     logging.info(f"Espacio liberado de archivos temporales: {humanize.naturalsize(total_deleted)}")
     
