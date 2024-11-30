@@ -4,6 +4,15 @@ import os
 import shutil
 from pathlib import Path
 import humanize  # Para mostrar el tamaño en formato legible (MB, GB)
+import logging
+
+
+# Configuración básica del logging
+logging.basicConfig(
+    filename="free_memory.log",  # Archivo donde se guardan los logs
+    level=logging.INFO,  # Nivel mínimo de mensajes que se registran
+    format="%(asctime)s - %(levelname)s - %(message)s"  # Formato de los mensajes
+)
 
 # Configuración básica
 temp_dirs = [
@@ -26,10 +35,12 @@ def clean_temp_directories(temp_dirs):
                     try:
                         total_deleted += file_path.stat().st_size
                         os.remove(file_path)
+                        logging.info(f"Removiendo archivo: {file_path}")
                     except Exception as e:
-                        print(f"Error al eliminar {file_path}: {e}")
-            print(f"Limpiada la carpeta {temp_dir}")
-    print(f"Espacio liberado de archivos temporales: {humanize.naturalsize(total_deleted)}")
+                        logging.error(f"Error al elimina: {file_path}: {e}")
+            logging.info(f"Limpiada la carpeta {temp_dir}")
+    logging.info(f"Espacio liberado de archivos temporales: {humanize.naturalsize(total_deleted)}")
+    
 
 # Función para buscar archivos grandes
 def find_large_files(folder, threshold):
@@ -85,4 +96,6 @@ def main():
 # if __name__ == "__main__":
 #    main()
 
+
+ # -------------------------------------------------------- #
 clean_temp_directories(temp_dirs)
