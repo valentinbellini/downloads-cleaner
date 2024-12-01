@@ -3,3 +3,4 @@ cryptography==44.0.0
 humanize==4.11.0
 pycparser==2.22
 PyPDF2==3.0.1
+tk==0.1.0
